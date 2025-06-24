@@ -1,28 +1,10 @@
 {
-  "name": "electric-vehicle-battery-swap-diagnosis",
+  "name": "ev-battery-diagnosis-ai",
   "version": "1.0.0",
-  "description": "An intelligent fault diagnosis system for electric vehicle battery swap stations",
+  "description": "AI-Powered Electric Vehicle Battery Swap Station Diagnosis System",
   "engines": {
     "node": "18.x"
   },
-
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Baggio200cn/electric-vehicle-battery-swap-diagnosis.git"
-  },
-  "keywords": [
-    "electric-vehicle",
-    "battery-swap",
-    "fault-diagnosis",
-    "knowledge-graph",
-    "react",
-    "typescript",
-    "material-ui",
-    "machine-learning",
-    "ai"
-  ],
-  "author": "Baggio200cn",
-  "license": "MIT",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
