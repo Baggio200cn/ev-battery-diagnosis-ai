@@ -1,44 +1,26 @@
 {
   "version": 2,
-  "name": "deepseek-ai-diagnosis-system",
   "functions": {
     "api/analyze-text.js": {
-      "maxDuration": 30
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "api/openai-analyze.js": {
+      "maxDuration": 30,
+      "memory": 512
     },
     "api/health.js": {
-      "maxDuration": 10
+      "maxDuration": 10,
+      "memory": 256
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     }
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, PUT, DELETE, OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization"
-        }
-      ]
-    }
-  ]
-} 
+  }
+}
