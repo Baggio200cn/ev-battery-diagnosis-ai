@@ -16,4 +16,5 @@ DEEPSEEK_API_KEY=your_api_key_here
 1. Fork此仓库 
 2. 连接到Vercel 
 3. 配置环境变量 
-4. 自动部署完成 
+4. 自动部署完成
+<!-- Force deployment trigger -->
